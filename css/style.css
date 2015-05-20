@@ -1,0 +1,126 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400);
+
+body {
+  font-family: "Inconsolata", monospace;
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: black;
+  background: white;
+
+  max-width: 1000px;
+  margin: 40px auto 40px auto;
+}
+
+header {
+  background: white;
+
+  width: 90px;
+  margin: 0px;
+  position: fixed;
+}
+
+h1 a {
+  font-size: 20px;
+  font-weight: 700;
+
+  color: #333333;
+
+  text-align: center;
+  text-decoration: none;
+
+  border-bottom: 1px solid #dddddd;
+
+  display: block;
+  padding: 0 0 20px 0;
+
+  transition: all 0.25s;
+}
+
+
+section {
+  float: right;
+  width: 900px;
+  margin: 0 0 40px 0;
+}
+
+div.product {
+  width: 280px;
+  margin: 0 10px 20px 10px;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+
+div.product div.meta {
+  padding: 10px 0 10px 0;
+}
+
+div.product h2 {
+  font-size: 14px;
+}
+
+div.product p {
+  margin: 5px 0 5px 0;
+  font-size: 11px;
+  color: #a7a7a7;
+}
+
+
+a.buy {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  width: 100%;
+
+  background: #1064d9;
+  color: white;
+
+  padding: 10px 0 10px 0;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  text-align: center;
+  text-decoration: none;
+
+  opacity: 0;
+}
+
+div.product:hover a.buy {
+  top: 184px;
+  opacity: 1;
+
+  /* just on hover do transition */
+  transition: opacity 0.25s ease, top 0.25s ease;
+}
+
+div.product.small a.buy {
+  top: 70px;
+}
+
+div.product.small:hover a.buy {
+  top: 64px;
+}
+
+
+nav {
+  margin: 15px 0 20px 0;
+}
+
+nav a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+  color: black;
+}
+
+a.selected {
+  color: #1064d9;
+}
+
+a#clear {
+  color: #c80b4a;
+  margin-top: 15px;
+  padding-top: 20px;
+  border-top: 1px solid #dddddd;
+}
